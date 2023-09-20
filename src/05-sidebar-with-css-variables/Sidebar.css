@@ -1,0 +1,29 @@
+.sidebar--root {
+  max-width: 300px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  text-align: left;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: cadetblue;
+  height: 100%;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  opacity: var(--open-sidebar, 0);
+  transform: translateX(calc((1 - var(--open-sidebar, 0)) * -100%));
+}
+
+.sidebar--root a {
+  display: block;
+}
+
+.sidebar--root a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 499px) {
+  * {
+    --open-sidebar: 1;
+  }
+}

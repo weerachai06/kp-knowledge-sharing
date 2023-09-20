@@ -1,0 +1,33 @@
+* {
+  --container-profile-min-width: 300px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 16px;
+  container-type: inline-size;
+}
+
+.container > .profile {
+  flex-basis: var(--container-profile-min-width, 300px);
+}
+
+.container > .information {
+  flex: 1;
+}
+
+.profile {
+  min-width: 300px;
+  height: auto;
+  aspect-ratio: 16/9;
+  background-color: antiquewhite;
+}
+
+@container (width < 640px) {
+  .container > * {
+    --container-profile-min-width: 100%;
+    flex-basis: var(--container-profile-min-width, 100%);
+    flex-grow: 1;
+  }
+}

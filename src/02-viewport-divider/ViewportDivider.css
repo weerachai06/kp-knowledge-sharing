@@ -1,0 +1,18 @@
+* {
+  --viewport-divider-background-color: rgb(182, 180, 180);
+  --viewport-divider-text-color: rgb(58, 54, 54);
+  --viewport-divider-padding: 0 0 24px;
+}
+
+.viewport-divider {
+  background-color: var(--viewport-divider-background-color);
+  color: var(--viewport-divider-text-color);
+  padding: var(--viewport-divider-padding);
+  box-shadow: 0 0 0 100vmax var(--viewport-divider-background-color);
+
+  /* Horizontal divider */
+  clip-path: inset(0 -100vmax);
+
+  /* Vertical divider */
+  /* clip-path: inset(-100vmax 0); */
+}

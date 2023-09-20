@@ -1,0 +1,53 @@
+* {
+  /* for handle sidebar state */
+  --open-sidebar: 0;
+
+  /* button variables */
+  --button-padding: 10px 14px;
+  --button-text-transform: uppercase;
+  --button-font-size: 14px;
+  --button-radius: 4px;
+  --button-cursor: pointer;
+  --button-pointer-events: initial;
+  --button-background-color: var(--primary);
+}
+
+.btn {
+  text-transform: var(--button-text-transform);
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  border-radius: var(--button-radius);
+}
+
+.btn.btn-primary {
+  --button-background-color: var(--primary);
+  background-color: var(--button-background-color);
+  color: var(--base-100);
+}
+
+.btn.btn-secondary {
+  --button-background-color: var(--secondary);
+  background-color: var(--button-background-color);
+  color: var(--neutral);
+}
+
+.btn.btn-warning {
+  --button-background-color: var(--warning);
+  background-color: var(--button-background-color);
+  color: var(--base-100);
+}
+
+.btn.btn-success {
+  --button-background-color: var(--success);
+  background-color: var(--button-background-color);
+  color: var(--base-100);
+}
+
+.btn.btn-primary.disabled {
+  --button-pointer-events: none;
+  --button-cursor: not-allowed;
+  --button-background-color: var(--disable);
+  pointer-events: var(--button-pointer-events);
+  cursor: var(--button-cursor);
+  background-color: var(--button-background-color);
+}
