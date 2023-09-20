@@ -8,6 +8,8 @@
   background-color: var(--viewport-divider-background-color);
   color: var(--viewport-divider-text-color);
   padding: var(--viewport-divider-padding);
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0 0 0 100vmax var(--viewport-divider-background-color);
 
   /* Horizontal divider */
